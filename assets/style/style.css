@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Colores generales */
+    --color-fondo: #d0cdc1;
+    --color-blanco: white;
+    --color-verde: #057456;
+    --color-borde: black;
+}
+
+
+body {
+    background-color: var(--color-fondo);
+}
+
+
+/* Página completa */
+
+.pagina {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* Barra superior */
+
+.barra-superior {
+    height: 60px;
+    background-color: var(--color-blanco);
+
+    border: 1px solid var(--color-borde);
+}
+
+
+/* Zona principal */
+
+.principal {
+    display: flex;
+
+    min-height: calc(100vh - 60px);
+}
+
+
+/* Menú lateral */
+
+.menu-lateral {
+    width: 250px;
+
+    background-color: var(--color-verde);
+
+    border: 1px solid var(--color-borde);
+}
+
+
+/* Contenido */
+
+.contenido {
+    flex: 1;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* Encabezado */
+
+#summary-cards {
+    width: 100%;
+}
+
+.encabezado {
+    height: 70px;
+
+    background-color: var(--color-blanco);
+
+    border: 1px solid var(--color-borde);
+}
+
+
+/* Tarjetas superiores */
+
+#charts {
+    width: 100%;
+}
+
+.tarjetas {
+    display: flex;
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+.tarjeta {
+    flex: 1;
+
+    height: 140px;
+
+    background-color: var(--color-blanco);
+
+    border: 1px solid var(--color-borde);
+}
+
+
+/* Zona inferior */
+
+#pedidos {
+    width: 100%;
+}
+
+.zona-inferior {
+    display: flex;
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+
+/* Columna izquierda */
+
+.columna-izquierda {
+    flex: 3;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    min-width: 0;
+}
+
+.caja-grande {
+    height: 300px;
+
+    background-color: var(--color-blanco);
+
+    border: 1px solid var(--color-borde);
+}
+
+.caja-abajo {
+    height: 220px;
+
+    background-color: var(--color-blanco);
+
+    border: 1px solid var(--color-borde);
+}
+
+
+/* Contenedor columna derecha */
+
+#info-cards {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* Columna derecha */
+
+.columna-derecha {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+.caja-derecha {
+    height: 250px;
+
+    background-color: var(--color-blanco);
+
+    border: 1px solid var(--color-borde);
+}
